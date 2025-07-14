@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "name": "horoscope_api",
+  "description": "API REST en Node.js pur (JavaScript) qui retourne la liste des signes astrologiques et calcule le signe d'une date.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "supertest": "^7.1.3"
+  }
+}
