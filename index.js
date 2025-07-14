@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 
 app.use(express.json());
 
@@ -71,14 +70,9 @@ app.post("/sign", (req, res) => {
     res.json({ sign });
 });
 
+// Route GET /
 app.get("/", (req, res) => {
     res.send("Horoscope API - Essayez GET /signs et POST /sign");
 });
-
-if (require.main === module) {
-    app.listen(port, () => {
-        console.log(`Horoscope API listening at http://localhost:${port}`);
-    });
-}
 
 module.exports = app;
